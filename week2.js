@@ -9,7 +9,7 @@ client.connect(err => {
     }
     console.log('Connected to MongoDB')
     
-    client.db().admin().listDatabases().then(reult => {
-        console.log(reult);
+    client.db().admin().listDatabases().then(result => {
+        console.log(result);
     })
 });
