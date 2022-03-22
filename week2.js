@@ -11,34 +11,34 @@ client.connect(err => {
     console.log('Connected to MongoDB')
     
     //Access to the databases and display all the databases
-    // client.db().admin().listDatabases().then(result => {
-    //     console.log(result);
-    // })
+    client.db().admin().listDatabases().then(result => {
+        console.log(result);
+    })
 
     //Access to the databases and display databases only
-    // client.db().admin().listDatabases().then(result => {
-    //     console.log(result['databases']);
-    // })
+    client.db().admin().listDatabases().then(result => {
+        console.log(result['databases']);
+    })
 
     //Access to the databases and display database on index 7
-    // client.db().admin().listDatabases().then(result => {
-    //     console.log(result['databases'][7]);
-    // })
+    client.db().admin().listDatabases().then(result => {
+        console.log(result['databases'][7]);
+    })
 
     //List the collections inside the database
-    // client.db('sample_training').listCollections( ).toArray( ).then(result => {
-    //     console.log(result);
-    // })
+    client.db('sample_training').listCollections( ).toArray( ).then(result => {
+        console.log(result);
+    })
 
     //List the collections inside the database on index 4
-    // client.db('sample_training').listCollections( ).toArray( ).then(result => {
-    //     console.log(result[4]);
-    // })
+    client.db('sample_training').listCollections( ).toArray( ).then(result => {
+        console.log(result[4]);
+    })
 
     //List all the document inside the collection
-    // client.db('sample_training').collection('zips').find().toArray().then(result => {
-    //     console.log(result);
-    // })
+    client.db('sample_training').collection('zips').find().toArray().then(result => {
+        console.log(result);
+    })
 
     //Find the document that have been specified in find()
     client.db('sample_training').collection('zips').find({city: 'BIRMINGHAM'}).toArray().then(result => {
