@@ -1,7 +1,7 @@
 const bcrypt = require("bcryptjs")
 const { faker } = require('@faker-js/faker');
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://m001-student:5BnK2tfSM1Vtl5Oh@sandbox.zy7nd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri = "mongodb+srv://m001-student:ERhkuQJWeLgOck36@sandbox.zy7nd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 client.connect( async err => {
@@ -42,4 +42,5 @@ client.connect( async err => {
         });
     }
     console.log('Completed');
+    bcrypt.compare
 });
