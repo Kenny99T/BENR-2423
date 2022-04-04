@@ -42,5 +42,4 @@ client.connect( async err => {
         });
     }
     console.log('Completed');
-    bcrypt.compare
 });
