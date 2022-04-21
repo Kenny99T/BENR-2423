@@ -1,5 +1,5 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
-const uri = "mongodb+srv://m001-student:ERhkuQJWeLgOck36@sandbox.zy7nd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const uri = "mongodb+srv://m001-student:qOft08A8i6XRjFpt@sandbox.zy7nd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 //Connecting to MongoDB server and print 'Connected to MongoDB' if connection success
